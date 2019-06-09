@@ -1,0 +1,261 @@
+/* UVODNÍ FOTKA */
+#navimg{
+  height: 100px;
+  margin-left: 530px;
+  
+}
+/*
+/* UPRAVENÍ VÝŠKY V NAVBARU */
+li{
+  margin-top: 23px;
+ 
+}
+/* POZADÍ NAVBARU */
+nav{
+    background-color:black;
+
+}
+/* TEXT V NAVBARU */ 
+a {
+  color: white;
+  font-family: MainFont;
+}
+/* ZMĚNA BARVY TEXTU V NAVBARU */
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: black;
+  color: gray;
+}
+/* LEVÁ STRANA POSONUTI V NAVBARU */
+.posunutiomne{
+  margin-left: 56%;
+}
+
+/* MAIN FONT */ 
+@font-face{
+    font-family: MainFont;
+    src: url(MACCOS_DOUBLE_Demo.otf);
+    
+
+}
+
+/* TEXTFONT */
+@font-face{
+  
+  font-family: TextFont;
+  src: url(NunitoSans-Light.ttf);
+  
+
+}
+/* ZVĚTŠENÍ  SIGN OBRÁZKŮ POD PODTRHEM*/
+.signs{
+  width: 8%;
+  
+}
+/* GLYPH ICONY V NAVBARU */
+.glyph{
+  width: 3.5%;
+  padding-left: 2%;
+ 
+}
+/* CONTENT BOX VYBAVENÍ */
+#img2{
+  margin-top: 75%; 
+  color: black;
+  font-family: TextFont;
+  font-size: 13pt;
+  padding: 50px;
+  background-color: white;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  
+
+}
+/* CONTENT BOX CENÍK */
+#img3{
+  margin-top: 145%;
+  color:black;
+  font-family: TextFont;
+  font-size: 13pt;
+  padding: 50px;
+  background-color: white;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+ 
+}
+/* NADPISY V CONTENT BOXU */
+h2{
+text-align: center;
+margin: 15px;
+font-family:MainFont;
+}
+/* CONTENT BOX O MNE */
+.backimg{
+  margin-top: 100px;
+  color: black;
+  font-family: TextFont;
+  font-size: 13pt;
+  padding: 50px;
+  background-color: white;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+
+}
+/* PODTRŽENÍ NADPISU */
+.podtrh{
+  color: black;
+  width: 350px;
+  border: solid 1px ;
+}
+/* PROSTE CONTAINER */
+.container {
+  position: relative;
+  text-align: center;
+ 
+}
+/* CENTROVÁNÍ PRO CONTENT BOXY */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* NADPISY PRO FOTKY */
+.fotky{
+  color: black;
+  font-family: TextFont;
+  text-align: center;
+  
+}
+/* ROZESTUPY FOTEK */
+.fotkyid{
+  margin-bottom: 35px;
+}
+/* PROMĚNA TEXTU ACTIVE V NAVBARU */
+nav ul li a.current {
+  color: gray;
+}
+/* SMOOOOOOOOOOOOOOOOOOOOOOOOOOOOTH SCROLLING */
+html{
+  scroll-behavior: smooth;
+}
+/* Efekt pro výběr obrázků */
+.border img {
+  transition: .2s ease;
+  }
+  
+.border img:hover{
+  box-shadow: 0 0 0 2px #000000;
+  transition: .2s ease;
+  }
+ /* Efekt zvětšení obrázku na přejetí */ 
+.grow img{
+    transition: 1s ease;
+}
+    
+.grow img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+/* Posonutí sign blíž k podtrhu 
+.highsign{
+  margin-top: -35px;
+ 
+}
+*/
+/* Zvětšení NAVBARU */
+.posunutidolu{
+  padding-top: 0.5%;
+}
+.posunutigalerie{
+  padding-left: 5%;
+  padding-top: 5%;
+  
+
+}
+.doleV{
+  background-color: black;
+  color:white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 15%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1800px) and (min-width: 800px){
+   .backimg{
+     width: 75%;
+   }
+   #img2{
+    width: 75%;
+   }
+   #img3{
+    width: 75%;
+   }
+    
+  
+
+}
+
+
