@@ -1,3 +1,4 @@
+
 /* UVODNÍ FOTKA */
 #navimg{
   height: 100px;
@@ -46,11 +47,8 @@ a {
   
 
 }
-/* ZVĚTŠENÍ  SIGN OBRÁZKŮ POD PODTRHEM*/
-.signs{
-  width: 8%;
-  
-}
+
+
 /* GLYPH ICONY V NAVBARU */
 .glyph{
   width: 3.5%;
@@ -59,11 +57,14 @@ a {
 }
 /* CONTENT BOX VYBAVENÍ */
 #img2{
+  width: 50%;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  text-align: justify;
+  padding: 4%;
   margin-top: 75%; 
   color: black;
   font-family: TextFont;
-  font-size: 13pt;
-  padding: 50px;
   background-color: white;
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
@@ -74,11 +75,13 @@ a {
 }
 /* CONTENT BOX CENÍK */
 #img3{
-  margin-top: 145%;
+  width: 50%;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  text-align: justify;
+  margin-top: 140%;
   color:black;
   font-family: TextFont;
-  font-size: 13pt;
-  padding: 50px;
   background-color: white;
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
@@ -88,17 +91,21 @@ a {
 }
 /* NADPISY V CONTENT BOXU */
 h2{
-text-align: center;
-margin: 15px;
-font-family:MainFont;
+  font-size: 2vw;
+  text-align: center;
+  
+  margin: 15px;
+  font-family:MainFont;
 }
 /* CONTENT BOX O MNE */
 .backimg{
-  margin-top: 100px;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  text-align: justify;
+  width: 50%;
   color: black;
   font-family: TextFont;
-  font-size: 13pt;
-  padding: 50px;
+  padding: 4%;
   background-color: white;
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
@@ -109,14 +116,13 @@ font-family:MainFont;
 /* PODTRŽENÍ NADPISU */
 .podtrh{
   color: black;
-  width: 350px;
+  width: 30%;
   border: solid 1px ;
 }
 /* PROSTE CONTAINER */
 .container {
   position: relative;
   text-align: center;
- 
 }
 /* CENTROVÁNÍ PRO CONTENT BOXY */
 .centered {
@@ -152,7 +158,7 @@ html{
 .border img:hover{
   box-shadow: 0 0 0 2px #000000;
   transition: .2s ease;
-  }
+}
  /* Efekt zvětšení obrázku na přejetí */ 
 .grow img{
     transition: 1s ease;
@@ -164,12 +170,11 @@ html{
     transform: scale(1.1);
     transition: 1s ease;
 }
-/* Posonutí sign blíž k podtrhu 
-.highsign{
-  margin-top: -35px;
+
+
  
-}
-*/
+
+
 /* Zvětšení NAVBARU */
 .posunutidolu{
   padding-top: 0.5%;
@@ -242,20 +247,43 @@ html{
 }
 
 
-
-@media (max-width: 1800px) and (min-width: 800px){
-   .backimg{
-     width: 75%;
-   }
-   #img2{
-    width: 75%;
-   }
-   #img3{
-    width: 75%;
-   }
-    
+/* Změna barvy HAMBURGERU v navbaru na bílou */
+.icon-bar{
+  color:white;
+  background-color: white;
+}
+@media screen and (max-width: 600px) {
   
+ .backimg{
+  
+  margin-top: -50%;
+  width: 50%;
+
+ }
+p{
+  font-size: 1vw;
+  line-height: 2vw;
+  text-align: justify;
+}
+ #img2{
+  margin-top: 10%;
+  width:50%;
+ }
+ #img3{
+   margin-top: 80%;
+ }
+ hr{
+   margin-top: -5%;
+   
+ }
+ .signs{
+   margin-bottom: 10%;
+ }
+ 
+
 
 }
+
+
 
 

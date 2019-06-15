@@ -8,6 +8,7 @@
     <title>Naty Photos</title>
 
     <!-- Bootstrap CSS -->
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,14 +17,21 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="navbar-fixed-top">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
         <div class="posunutidolu">
-
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="container">
                     <ul class="nav navbar-nav">
@@ -35,12 +43,12 @@
                             <a class="nav-link scroll" href="#Vybaveni">Vybavení</a>
                         </li>
 
-
                         <a href="#">
                             <div class="grow">
                                 <img src="fotky/bySkoletonback.png" class="img-responsive" alt="Image" id="navimg">
                             </div>
                         </a>
+
                     </ul>
                     <ul class="nav navbar-nav">
                         <li class="right nav-item active">
@@ -65,12 +73,13 @@
             <div>
                 <img src="fotky/nahled3.png" alt="nahledfot" style="width:100%;">
 
-                <div class="centered backimg">
+                <div class="centered backimg " style="width:50%;">
                     <h2>O mně</h2>
                     <hr class="podtrh">
-                    <div class="container text-center">
-                        <img src="fotky/signs/info.png" class="highsign signs" alt="infosign">
+                    <div class="text-center signs">
+                            <i class="fa fa-user fa-4x"></i>
                     </div>
+                    <p>
                     Ahoj, já jsem Natka. Je mi 22 let a pocházím z Opavy. S focením jsem začala v 19 letech úplnou
                     náhodou. Dneska jsou to 3 roky, co fotím, a během těch tří let jsem se dostala k zajímavým akcím a
                     získala tak mnoho zkušeností. Před rokem jsem se umístila na 4. místě ve fotografické soutěži na
@@ -79,6 +88,7 @@
                     jsem mohla posílat fotografie z různých společenských akcí. Nejraději fotím koncertní fotografie,
                     ale i portrétní. Nejsem profesionální fotograf. Focení je můj koníček, ve kterém se stále
                     zdokonaluji.
+                    </p>
                 </div>
             </div>
         </section>
@@ -86,21 +96,22 @@
         <section class="Vybaveni" id="Vybaveni">
             <div>
                 <img src="fotky/n4.jpg" alt="nahledfot" style="width:100%;">
-                <div class="centered " id="img2">
-                    <h2>Vybavení</h2>
+                <div class="centered " id="img2" style="width:50%;">
+                    <h2 >Vybavení</h2>
                     <hr class="podtrh">
-                    <div class="container">
-                        <img src="fotky/signs/camera.png" alt="camsign" class=" highsign signs">
+                    <div class="text-center signs">
+                            <i class="fa fa-camera fa-4x"></i>
                     </div>
-                    <ul>
+                    <p >
                         <b> - Tělo: </b> Nikon D3300
-                    </ul>
-                    <ul>
+                        <br>
+                    
                         <b> - Objektivy:</b> Nikkor 50mm 1:1.8
                         Nikkor 55-200m 1:4-5.6
-                    </ul>
-                    <ul>- Všechny fotky upravuji v programu Zoner Photo Studio </ul>
 
+                        <br>
+                    - Všechny fotky upravuji v programu Zoner Photo Studio 
+                </p>
                 </div>
             </div>
         </section>
@@ -108,11 +119,11 @@
         <section class="Cenik" id="Cenik">
             <div>
                 <img src="fotky/3.png" alt="nahledfot" style="width:100%;">
-                <div class="centered " id="img3" class="align-top">
-                    <h2>Ceník</h2>
+                <div class="centered " id="img3" class="align-top" style="width:50%;">
+                    <h2 >Ceník</h2>
                     <hr class="podtrh">
-                    <div class="container">
-                        <img src="fotky/signs/iconfinder_price_tag_usd_172529.png" alt="moneysign" class="signs">
+                    <div class="text-center signs">
+                            <i class="fa fa-money  fa-4x"></i>
                     </div>
 
                     <!--
@@ -125,12 +136,12 @@
                     <ul>
                         <b> - Focení dětí (dle počtu fotek) - </b> 500 CZK</ul>
                     -->
-
-                    <table class="table table-bordered  table-hover">
-                        <thead >
-                            <tr >
-                                <th class="text-center" >Typ fotky</th>
-                                <th class="text-center" >Cena</th>
+                    <p>
+                    <table class="table table-bordered  table-hover ">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Typ fotky</th>
+                                <th class="text-center">Cena</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -154,7 +165,7 @@
                             </tr>
                         </tbody>
                     </table>
-
+                </p>
 
 
                 </div>
