@@ -81,7 +81,8 @@ a {
   text-align: justify;
   margin-top: 140%;
   color:black;
-  padding: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
   font-family: TextFont;
   background-color: white;
   border-top-left-radius: 22px;
@@ -253,17 +254,17 @@ html{
   color:white;
   background-color: white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   
  .backimg{
   
   margin-top: -50%;
-  width: 50%;
+
 
  }
  #img2{
   margin-top: 10%;
-  width:50%;
+
  }
  #img3{
    margin-top: 80%;
@@ -273,7 +274,7 @@ html{
    
  }
  .signs{
-   margin-bottom: 10%;
+   margin-bottom: 5%;
  }
  
 
