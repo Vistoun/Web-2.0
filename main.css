@@ -141,7 +141,7 @@ h2{
 }
 /* ROZESTUPY FOTEK */
 .fotkyid{
-  margin-bottom: 35px;
+  margin-bottom: 10%;
 }
 /* PROMĚNA TEXTU ACTIVE V NAVBARU */
 nav ul li a.current {
@@ -189,6 +189,7 @@ html{
 .doleV{
   background-color: black;
   color:white;
+  position: relative;
 }
 
 /* The Modal (background) */
@@ -254,23 +255,21 @@ html{
   background-color: white;
 }
 @media screen and (max-width: 600px) {
-  
- .backimg{
-  margin-top: -50%;
-
- }
+  .backimg{
+    margin-top: -60%;
+  }
 p{
   font-size: 4pt;
   line-height: 5pt;
   text-align: justify;
 }
  #img2{
-  margin-top: 10%;
+  margin-top: 0%;
 
 
  }
  #img3{
-   margin-top: 80%;
+   margin-top: 70%;
 
  }
  hr{
@@ -284,6 +283,66 @@ p{
    width:8%;
  }
  
-
+}
+@media screen and (max-width: 400px) {
+  .backimg{
+    margin-top: -50%;
+  }
+  #img2{
+    margin-top: 15%;
+  
+  
+   }
+   #img3{
+     margin-top: 80%;
+  
+   }
+}
+@media screen and (max-width: 1200px) {
+  .posunutiomne{
+    margin-left: 56%;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .posunutiomne{
+    margin-left:0;
+  }
+  #navimg{
+    display: none;
+  }
 
 }
