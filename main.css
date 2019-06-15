@@ -81,8 +81,7 @@ a {
   text-align: justify;
   margin-top: 140%;
   color:black;
-  padding-right: 4%;
-  padding-left: 4%;
+  padding: 4%;
   font-family: TextFont;
   background-color: white;
   border-top-left-radius: 22px;
@@ -95,7 +94,6 @@ a {
 h2{
   font-size: 2vw;
   text-align: center;
-  
   margin: 15px;
   font-family:MainFont;
 }
@@ -258,7 +256,7 @@ html{
   
  .backimg{
   
-  margin-top: -50%;
+  margin-top: -40%;
 
 
  }
