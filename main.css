@@ -81,6 +81,7 @@ a {
   text-align: justify;
   margin-top: 140%;
   color:black;
+  padding: 4%;
   font-family: TextFont;
   background-color: white;
   border-top-left-radius: 22px;
@@ -260,11 +261,6 @@ html{
   width: 50%;
 
  }
-p{
-  font-size: 1vw;
-  line-height: 2vw;
-  text-align: justify;
-}
  #img2{
   margin-top: 10%;
   width:50%;
