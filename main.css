@@ -256,35 +256,34 @@ html{
 @media screen and (max-width: 600px) {
   
  .backimg{
-  
   margin-top: -50%;
-  width: 50%;
 
  }
 p{
-  font-size: 1vw;
-  line-height: 1.5vw;
+  font-size: 4pt;
+  line-height: 5pt;
   text-align: justify;
 }
  #img2{
   margin-top: 10%;
-  width:50%;
+
+
  }
  #img3{
    margin-top: 80%;
+
  }
  hr{
    margin-top: -5%;
    
  }
  .signs{
-   margin-bottom: 10%;
+   margin-bottom: 2%;
+ }
+ .glyph{
+   width:8%;
  }
  
 
 
 }
-
-
-
-
