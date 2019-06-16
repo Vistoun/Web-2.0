@@ -17,7 +17,8 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">¨
+        <meta name="description" content="Photograf's websites with information and image galllery">
 </head>
 
 <body>
@@ -102,15 +103,23 @@
                     <div class="text-center signs">
                             <i class="fa fa-camera fa-4x"></i>
                     </div>
-                    <p >
-                        <b> - Tělo: </b> Nikon D3300
-                        <br>
-                    
-                        <b> - Objektivy:</b> Nikkor 50mm 1:1.8
+                    <p>
+                        <ul>
+                            <li>
+                            
+                        <b>  Tělo: </b> Nikon D3300
+                        
+                    </li>
+                    <li>
+                        <b>  Objektivy:</b> Nikkor 50mm 1:1.8
                         Nikkor 55-200m 1:4-5.6
-
-                        <br>
-                    - Všechny fotky upravuji v programu Zoner Photo Studio 
+                    </li>
+                    <li>
+    
+             Všechny fotky upravuji v programu Zoner Photo Studio 
+                </li>
+                </ul>
+    
                 </p>
                 </div>
             </div>
@@ -205,20 +214,32 @@
                 <span class="close">&times;</span>
                 <div class="container">
                     <h3 style="color: black">Názor na fotky</h3>
-                    <hr class="podtrh">
 
                     <form>
+                            <div class="form-group row">
+                                    <label for="jmeno" class="col-sm-3 col-form-label" style="color: black">Jméno</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" name="jmeno" id="jmeno" placeholder="Křestní jméno" title="Jméno nesmí obsahovat jiné než abecední znaky">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="prijmeni" class="col-sm-3 col-form-label" style="color: black">Příjmení: </label>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control" name="prijmeni" id="prijmeni" placeholder="Příjmení">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                        
                         <div class="form-group row">
-                            <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Poznámka</label>
-                            <div class="col-sm-3">
+                            <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Názor na fotky</label>
+                            <div class="col-sm-5">
                                 <textarea class="form-control poznamka" name="poznamka" id="poznamka"
-                                    rows="5">Něco napiš</textarea>
+                                    rows="5"></textarea>
                             </div>
                         </div>
-                        <div class="form-group row">
-                    
-                                <button type="submit" class="btn btn-primary ">Potvrdit</button>
-                        </div>
+                        <div class="col-sm-7">
+                        <button type="submit" class="btn btn-primary ">Potvrdit</button>
+                    </div>
                     </form>
 
                 </div>
@@ -231,34 +252,33 @@
 
 
     </footer>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+  modal.style.display = "block";
+}
 
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

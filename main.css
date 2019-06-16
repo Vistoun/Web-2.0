@@ -219,7 +219,8 @@ html{
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  text-align: right;
 }
 
 /* Add Animation */
@@ -247,6 +248,7 @@ html{
   text-decoration: none;
   cursor: pointer;
 }
+
 
 
 /* Změna barvy HAMBURGERU v navbaru na bílou */
