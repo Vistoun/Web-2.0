@@ -365,32 +365,38 @@
                 <span class="close">&times;</span>
                 <div class="container">
                     <h3 style="color: black">Názor na fotky</h3>
-                    <hr class="podtrh">
 
                     <form>
-                        <div class="form-group">
-                            <label for="email">Email: </label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
+                            <div class="form-group row">
+                                    <label for="jmeno" class="col-sm-3 col-form-label" style="color: black">Jméno</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" name="jmeno" id="jmeno" placeholder="Křestní jméno" title="Jméno nesmí obsahovat jiné než abecední znaky">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="prijmeni" class="col-sm-3 col-form-label" style="color: black">Příjmení: </label>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control" name="prijmeni" id="prijmeni" placeholder="Příjmení">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                        
                         <div class="form-group row">
-                            <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Poznámka</label>
-                            <div class="col-sm-9">
+                            <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Názor na fotky</label>
+                            <div class="col-sm-5">
                                 <textarea class="form-control poznamka" name="poznamka" id="poznamka"
                                     rows="5">Něco napiš</textarea>
                             </div>
                         </div>
-
-
-
+                        <div class="col-sm-7">
                         <button type="submit" class="btn btn-primary ">Potvrdit</button>
-
+                    </div>
                     </form>
 
                 </div>
             </div>
+    </div>
 
-
-        </div>
 
 
 
