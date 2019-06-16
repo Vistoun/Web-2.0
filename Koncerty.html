@@ -18,13 +18,21 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <style>
+         body {
+            background: url(fotky/Backimg/1.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
            figcaption{
             font-size: 0.6vw;
             line-height: 1vw;
-            text-align: justify;
+            text-align: center;
+        
         }
         .BackFotImg {
-            font-size: 0.8vw;
+            font-size: 1vw;
             line-height: 1vw;
             text-align: justify;
             width: 50%;
@@ -40,24 +48,93 @@
         .fotkyods{
             margin-bottom: 10%;
         }
+        .copy{
+            margin-left: 2%;
+            margin-top: 2%;
+            font-size: 30px;
+            color: black;
+
+        }
+
+        .copy:hover {
+            color: grey !important;
+        }
+        .copytext{
+            font-size: 0.8vw;
+           
+        }
+        
         @media screen and (max-width: 1279px){
             figcaption{
             font-size: 0.5vw;
             line-height: 1vw;
-            text-align: justify;
         }
+    }
+    @media screen and (max-width: 1200px){
+            .copytext{
+                font-size: 1.2
+            }
+            .copy{
+                font-size:15px;
+            }
+
         }
-        @media screen and (max-width: 600px){
-            .BackFotImg {
-                width: 50%;
-                margin-top: -50%;
+        @media screen and (max-width: 1000px){
+           
+            figcaption {
+            font-size: 1.2vw;
+            line-height: 2vw;
+          
+        }
+        .copytext{
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+        }
+        .copy{
+            font-size:15px;
+        }
+
+        }
+        @media screen and (max-width: 650px){
+            figcaption{
+                font-size: 1vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .copy{
+                font-size: 15px;
+            }
+            .copytext{
+                font-size: 1.6vw;
+            }
+            figcaption{
+                font-size: 0.9vw;
+            }
+        }
+         
+        @media screen and (max-width:  500px){
+            .copy{
+                font-size: 10px;
             }
         }
         @media screen and (max-width: 400px) {
-            .BackFotImg {
-                width: 50%;
-               
+
+        
+            .BackFotImg{
+                width: 80%;
             }
+            .figcaption{
+                font-size: 1.9vw;
+             
+            }
+            .copy{
+                font-size: 8px;
+            }
+            .copytext{
+                font-size: 1.9vw;
+            }
+
 
         }
     </style>
@@ -112,7 +189,7 @@
 
         <!-- KATEGORIE FOTEK -->
 
-        <img src="fotky/Backimg/1.jpg" alt="n4" style="width:100%;">
+    
         <!-- NADPIS -->
         <div class="centered BackFotImg">
             <h2>Koncerty</h2>
@@ -129,7 +206,7 @@
                 <!-- Joe Carnation -->
 
                 <figure class="col-xs-4 col-md-2">
-                    <figcaption style="text-align: center;">Joe Carnation</figcaption>
+                    <figcaption >Joe Carnation</figcaption>
                     <a href="Joe Carnation.html">
                         <div class="fotkyods fotky border ">
                             <img class="img-responsive img-rounded" src="fotky/Koncerty/Joe Carnation/4.jpg" alt="uvodfot">
@@ -140,7 +217,7 @@
                 <!-- Hanácký woodstock -->
 
                 <figure class="col-xs-4 col-md-2 ">
-                    <figcaption style="text-align: center;">Hanácký woodstock</figcaption>
+                    <figcaption >Hanácký woodstock</figcaption>
                     <a href="Hanácký woodstock.html">
                         <div class="fotkyods fotky border">
 
@@ -151,7 +228,7 @@
                 <!-- Masters Of rock -->
 
                 <figure class="col-xs-4 col-md-2">
-                    <figcaption style="text-align: center;">Masters Of rock</figcaption>
+                    <figcaption >Masters Of rock</figcaption>
                     <a href="Masters Of rock.html">
                         <div class="fotkyods fotky border">
 
@@ -162,7 +239,7 @@
                 <!-- Pražský Výběr.html -->
 
                 <figure class="col-xs-4 col-md-2">
-                    <figcaption style="text-align: center;"> Pražský Výběr </figcaption>
+                    <figcaption > Pražský Výběr </figcaption>
                     <a href="Pražský Výběr.html">
                         <div class="fotkyods fotky border">
 
@@ -174,7 +251,7 @@
                 <!-- Stromboli Olomouc -->
 
                 <figure class="col-xs-4 col-md-2">
-                    <figcaption style="text-align: center;">Stromboli Olomouc</figcaption>
+                    <figcaption >Stromboli Olomouc</figcaption>
                     <a href="Stromboli Olomouc.html">
                         <div class="fotkyods fotky border">
                             <img class="img-responsive img-rounded " src="fotky/Koncerty/Stromboli Olomouc/6.jpg" id="uvodfot"
@@ -183,7 +260,7 @@
                     </a>
                 </figure>
                 <figure class="col-xs-4 col-md-2">
-                        <figcaption style="text-align: center;">Už brzy!</figcaption>
+                        <figcaption >Už brzy!</figcaption>
                     
                             <div class="fotkyods fotky ">
                                 <img class="img-responsive img-rounded " src="fotky/added/1.jpg" id="uvodfot" style="opacity: 0.5;"
@@ -194,70 +271,68 @@
 
 
             </section>
+            <section class="footer">
+                    <br>
+                    <div class="text-center ">
+                    
+                        <b class="copytext">Copyright&copy; Vašek Lacheta</b>
+                    
+    
+    
+                        <a>
+                            <i class="fa fa-facebook copy "></i>
+                        </a>
+    
+    
+                        <a>
+                            <i class="fa fa-instagram copy"></i>
+                        </a>
+    
+    
+    
+    
+                        <a id="myBtn"><i class="fa fa-envelope copy"></i></a>
+                        <br>
+                    </div>
+    </section>
+                    <!-- The Modal -->
+    
+            </div>
+            <div id="myModal" class="modal">
+    
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="container">
+                        <h3 style="color: black">Názor na fotky</h3>
+                        <hr class="podtrh">
+    
+                        <form>
+                            <div class="form-group row">
+                                <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Poznámka</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" name="poznamka" class="poznamka"
+                                        rows="5">Něco napiš</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="">
+                                    <button type="submit" class="btn btn-primary ">Potvrdit</button>
+    
+                        </form>
+    
+                    </div>
+                </div>
+    
+    
+            </div>
         </div>
         </div>
 
 
     </main>
 
-    <footer class="doleV ">
-        <br>
-        <div class="text-center ">
-
-            Copyright&copy; Vašek Lacheta
-
-
-
-            <a href="#">
-                <img src="fotky/Icony/Facebook.png" id="Facebook" alt="FbIcon" class="glyph ">
-            </a>
-
-
-            <a href="#">
-                <img src="fotky/Icony/instagram.png" id="instagram" alt="InIcon" class="glyph ">
-            </a>
-
-
-
-
-            <a id="myBtn"><img src="fotky/Icony/mail.png" id="mail" alt="MailIcon" class="glyph "></a>
-            <br>
-            <br>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="container">
-                    <h3 style="color: black">Názor na fotky</h3>
-                    <hr class="podtrh">
-
-                    <form>
-                        <div class="form-group row">
-                            <label for="poznamka" class="col-sm-3 col-form-label" style="color: black">Poznámka</label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control" name="poznamka" class="poznamka"
-                                    rows="5">Něco napiš</textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="">
-                                <button type="submit" class="btn btn-primary ">Potvrdit</button>
-
-                    </form>
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-    </footer>
+    
 
     <script>
         // Get the modal

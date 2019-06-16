@@ -18,11 +18,22 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <style>
-         figcaption{
-            font-size: 0.7vw;
-            line-height: 1vw;
+        body {
+            background: url(fotky/nahled2.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+     
+
+        figcaption {
+            font-size: 1.1vw;
+            line-height: 1.6vw;
             text-align: justify;
         }
+
         .BackFotImg {
             font-size: 0.8vw;
             line-height: 1vw;
@@ -37,20 +48,84 @@
             border-bottom-left-radius: 22px;
             border-bottom-right-radius: 22px;
         }
-        .fotkyods{
+
+        .fotkyods {
             margin-bottom: 10%;
         }
-        @media screen and (max-width: 600px){
-            .BackFotImg {
-                width: 50%;
-                margin-top: -50%;
+
+        .copy{
+            margin-left: 2%;
+            margin-top: 2%;
+            font-size: 30px;
+            color: black;
+
+        }
+
+        .copy:hover {
+            color: grey !important;
+        }
+        .copytext{
+            font-size: 0.8vw;
+           
+        }
+        @media screen and (max-width: 1200px){
+            .copytext{
+                font-size: 1.2
+            }
+            .copy{
+                font-size:15px;
+            }
+
+        }
+        @media screen and (max-width: 1000px){
+            figcaption {
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+          
+        }
+        .copytext{
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+        }
+        .copy{
+            font-size:15px;
+        }
+
+        }
+    
+
+        @media screen and (max-width: 600px) {
+            .copy{
+                font-size: 15px;
+            }
+            .copytext{
+                font-size: 1.6vw;
+            }
+            figcaption{
+                font-size: 2vw;
+            }
+        }
+         
+        @media screen and (max-width:  500px){
+            .copy{
+                font-size: 10px;
             }
         }
         @media screen and (max-width: 400px) {
-            .BackFotImg {
-                width: 50%;
-               
+
+        
+
+            figcaption {
+                font-size: 1.8vw;
+                line-height: 2.1vw;
             }
+            .copy{
+                font-size: 8px;
+            }
+            .copytext{
+                font-size: 1.9vw;
+            }
+
 
         }
     </style>
@@ -103,13 +178,13 @@
     <main>
 
 
-        <!-- KATEGORIE FOTEK -->
+        <!-- KATEGORIE FOTEK 
 
-        <img src="fotky/nahled2.png" alt="n4" style="width:100%;">
+        <img src="fotky/nahled2.png" alt="n4" style="width:100%; " class="zkouska"> -->
         <!-- NADPIS -->
         <div class="centered BackFotImg">
             <h2>Fotogalerie</h2>
-            <hr class="podtrh" >
+            <hr class="podtrh">
             <div class="text-center signs">
                 <i class="fa fa-image fa-4x"></i>
             </div>
@@ -175,47 +250,44 @@
                     </a>
                 </figure>
                 <figure class="col-xs-4 col-md-2">
-                        <figcaption style="text-align: center;">Už brzy!</figcaption>
-                    
-                            <div class="fotkyods fotky ">
-                                <img class="img-responsive img-rounded " src="fotky/added/2.jpg" id="uvodfot" style="opacity: 0.5;" alt="portrety">
-                            </div>
-                
-                    </figure>
+                    <figcaption style="text-align: center;">Už brzy!</figcaption>
+
+                    <div class="fotkyods fotky ">
+                        <img class="img-responsive img-rounded " src="fotky/added/2.jpg" id="uvodfot"
+                            style="opacity: 0.5;" alt="portrety">
+                    </div>
+
+                </figure>
 
 
             </section>
+<section class="footer">
+                <br>
+                <div class="text-center ">
+                
+                    <b class="copytext">Copyright&copy; Vašek Lacheta</b>
+                
+
+
+                    <a>
+                        <i class="fa fa-facebook copy "></i>
+                    </a>
+
+
+                    <a>
+                        <i class="fa fa-instagram copy"></i>
+                    </a>
+
+
+
+
+                    <a id="myBtn"><i class="fa fa-envelope copy"></i></a>
+                    <br>
+                </div>
+</section>
+                <!-- The Modal -->
+
         </div>
-        </div>
-
-
-    </main>
-
-    <footer class="doleV ">
-        <br>
-        <div class="text-center ">
-
-            Copyright&copy; Vašek Lacheta
-
-
-
-            <a href="#">
-                <img src="fotky/Icony/Facebook.png" id="Facebook" alt="FbIcon" class="glyph ">
-            </a>
-
-
-            <a href="#">
-                <img src="fotky/Icony/instagram.png" id="instagram" alt="InIcon" class="glyph ">
-            </a>
-
-
-
-
-            <a id="myBtn"><img src="fotky/Icony/mail.png" id="mail" alt="MailIcon" class="glyph "></a>
-            <br>
-            <br>
-        </div>
-        <!-- The Modal -->
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
@@ -243,12 +315,11 @@
             </div>
 
 
+        </div>
+
+    </main>
 
 
-
-
-
-    </footer>
 
     <script>
         // Get the modal
